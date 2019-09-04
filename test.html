@@ -794,20 +794,47 @@
         <div id="signin" data-target-group="idForm">
           <!-- Title -->
           <header class="text-center mb-5">
-            <h2 class="h4 mb-0">Please sign in</h2>
-            <p>Signin to manage your account.</p>
+            <h2 class="h4 mb-0">Register</h2>
+            <p>Register to manage your account.</p>
           </header>
           <!-- End Title -->
+           <!-- Signin Social Buttons -->
+           <div class="row mx-gutters-2 mb-4">
+              <div class="col-sm-12 mb-2 mb-sm-0">
+                <button type="button" class="btn btn-block btn-facebook text-nowrap">
+                  <span class="fab fa-facebook-f mr-2"></span>
+                  Signup with Facebook
+                </button>
+              </div>
+            </div>
+            <!-- End Signin Social Buttons -->
 
+                <!-- Divider -->
+          <div class="text-center u-divider-wrapper my-3">
+              <span class="u-divider u-divider--xs u-divider--text">OR</span>
+            </div>
+            <!-- End Divider -->
+           <!-- Input -->
+           <div class="js-form-message mb-3">
+            <div class="js-focus-state input-group form">
+              
+              <input type="text" class="form-control form__input" name="name" required="" placeholder="Full Name" aria-label="Full-name" data-msg="Please enter your full name" data-error-class="u-has-error" data-success-class="u-has-success">
+            </div>
+          </div>
+          <!-- End Input -->
+           <!-- Input -->
+           <div class="js-form-message mb-3">
+            <div class="js-focus-state input-group form">
+              
+              <input type="email" class="form-control form__input" name="email" required="" placeholder="Email" aria-label="Email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+            </div>
+          </div>
+          <!-- End Input -->
           <!-- Input -->
           <div class="js-form-message mb-3">
             <div class="js-focus-state input-group form">
-              <div class="input-group-prepend form__prepend">
-                <span class="input-group-text form__text">
-                  <span class="fa fa-user form__text-inner"></span>
-                </span>
-              </div>
-              <input type="email" class="form-control form__input" name="email" required="" placeholder="Email" aria-label="Email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+
+              <input type="number" class="form-control form__input" name="phone" required="" placeholder="Phone number" aria-label="Phone-number" data-msg="Please enter a valid 10 digit phone number" data-error-class="u-has-error" data-success-class="u-has-success" min="1" minlength="10" maxlength="10">
             </div>
           </div>
           <!-- End Input -->
@@ -815,67 +842,95 @@
           <!-- Input -->
           <div class="js-form-message mb-3">
             <div class="js-focus-state input-group form">
-              <div class="input-group-prepend form__prepend">
-                <span class="input-group-text form__text">
-                  <span class="fa fa-lock form__text-inner"></span>
-                </span>
-              </div>
-              <input type="password" class="form-control form__input" name="password" required="" placeholder="Password" aria-label="Password" data-msg="Your password is invalid. Please try again." data-error-class="u-has-error" data-success-class="u-has-success">
+              
+              <input type="text" class="form-control form__input" name="team-name" required="" placeholder="College/Institute/Team name" aria-label="team-name" data-msg="Please enter your college/team name" data-error-class="u-has-error" data-success-class="u-has-success">
             </div>
           </div>
           <!-- End Input -->
 
           <div class="row mb-3">
-            <div class="col-6">
-              <!-- Checkbox -->
-              <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
-                <input type="checkbox" class="custom-control-input" id="rememberMeCheckbox">
-                <label class="custom-control-label" for="rememberMeCheckbox">
-                  Remember Me
-                </label>
+              <div class="col-6">
+                <!-- Checkbox -->
+                <div class="custom-control custom-checkbox d-flex  text-muted">
+                  <input type="checkbox" class="custom-control-input" id="male">
+                  <label class="custom-control-label" for="rememberMeCheckbox">
+                    Male
+                  </label>
+                  
+                </div>
+                <div class="custom-control custom-checkbox d-flex text-muted">
+                    <input type="checkbox" class="custom-control-input" id="female">
+                    <label class="custom-control-label" for="rememberMeCheckbox">
+                      Female
+                    </label>
+                  </div>
+                <!-- End Checkbox -->
               </div>
-              <!-- End Checkbox -->
             </div>
 
-            <div class="col-6 text-right">
-              <a class="js-animation-link float-right" href="javascript:;" data-target="#forgotPassword" data-link-group="idForm" data-animation-in="fadeIn">Forgot Password?</a>
+          <!-- Input -->
+          <div class="js-form-message mb-3">
+              <div class="js-focus-state input-group form">
+                <div class="input-group-prepend form__prepend">
+                  <span class="input-group-text form__text">
+                    <span class="fa fa-lock form__text-inner"></span>
+                  </span>
+                </div>
+                <input type="password" class="form-control form__input" name="password" id="password" required="" placeholder="Password" aria-label="Password" data-msg="Your password is invalid. Please try again." data-error-class="u-has-error" data-success-class="u-has-success">
+              </div>
             </div>
+            <!-- End Input -->
+  
+            <!-- Input -->
+            <div class="js-form-message mb-3">
+              <div class="js-focus-state input-group form">
+                <div class="input-group-prepend form__prepend">
+                  <span class="input-group-text form__text">
+                    <span class="fa fa-key form__text-inner"></span>
+                  </span>
+                </div>
+                <input type="password" class="form-control form__input" name="confirmPassword" required="" placeholder="Confirm Password" aria-label="Confirm Password" data-msg="Password does not match the confirm password." data-error-class="u-has-error" data-success-class="u-has-success">
+              </div>
+            </div>
+            <!-- End Input -->
+  
+
+           <!-- Input -->
+           <!-- <div class="js-form-message mb-3">
+            <div class="js-focus-state input-group form">
+              Gender:
+              <label class="radio-inline">
+                <input type="radio" name="gender" required="" value="Male" aria-label="team-name" data-msg="Please select your gender" data-error-class="u-has-error" data-success-class="u-has-success">Male
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="gender" required="" value="Female" aria-label="team-name" data-msg="Please select your gender" data-error-class="u-has-error" data-success-class="u-has-success" checked>Female
+              </label>
+            </div>
+          </div> -->
+          <!-- End Input -->
+
+          
+
+            <!-- <div class="col-6 text-right">
+              <a class="js-animation-link float-right" href="javascript:;" data-target="#forgotPassword" data-link-group="idForm" data-animation-in="fadeIn">Forgot Password?</a>
+            </div> -->
           </div>
 
           <div class="mb-3">
             <button type="submit" class="btn btn-block btn-primary">Signin</button>
           </div>
 
-          <div class="text-center mb-3">
+          <!-- <div class="text-center mb-3">
             <p class="text-muted">
               Do not have an account?
               <a class="js-animation-link" href="javascript:;" data-target="#signup" data-link-group="idForm" data-animation-in="fadeIn">Signup
               </a>
             </p>
-          </div>
+          </div> -->
 
-          <!-- Divider -->
-          <div class="text-center u-divider-wrapper my-3">
-            <span class="u-divider u-divider--xs u-divider--text">OR</span>
-          </div>
-          <!-- End Divider -->
+      
 
-          <!-- Signin Social Buttons -->
-          <div class="row mx-gutters-2 mb-4">
-            <div class="col-sm-6 mb-2 mb-sm-0">
-              <button type="button" class="btn btn-block btn-facebook text-nowrap">
-                <span class="fab fa-facebook-f mr-2"></span>
-                Signin with Facebook
-              </button>
-            </div>
-            <div class="col-sm-6">
-              <button type="button" class="btn btn-block btn-twitter">
-                <span class="fab fa-twitter mr-2"></span>
-                Signin with Twitter
-              </button>
-            </div>
-          </div>
-          <!-- End Signin Social Buttons -->
+         
         </div>
         <!-- End Signin -->
 
@@ -901,32 +956,7 @@
           </div>
           <!-- End Input -->
 
-          <!-- Input -->
-          <div class="js-form-message mb-3">
-            <div class="js-focus-state input-group form">
-              <div class="input-group-prepend form__prepend">
-                <span class="input-group-text form__text">
-                  <span class="fa fa-lock form__text-inner"></span>
-                </span>
-              </div>
-              <input type="password" class="form-control form__input" name="password" id="password" required="" placeholder="Password" aria-label="Password" data-msg="Your password is invalid. Please try again." data-error-class="u-has-error" data-success-class="u-has-success">
-            </div>
-          </div>
-          <!-- End Input -->
-
-          <!-- Input -->
-          <div class="js-form-message mb-3">
-            <div class="js-focus-state input-group form">
-              <div class="input-group-prepend form__prepend">
-                <span class="input-group-text form__text">
-                  <span class="fa fa-key form__text-inner"></span>
-                </span>
-              </div>
-              <input type="password" class="form-control form__input" name="confirmPassword" required="" placeholder="Confirm Password" aria-label="Confirm Password" data-msg="Password does not match the confirm password." data-error-class="u-has-error" data-success-class="u-has-success">
-            </div>
-          </div>
-          <!-- End Input -->
-
+          
           <div class="mb-3">
             <button type="submit" class="btn btn-block btn-primary">Signup</button>
           </div>
@@ -961,7 +991,7 @@
             </div>
           </div>
           <!-- End Signup Social Buttons -->
-        </div>
+        </div>  
         <!-- End Signup -->
 
         <!-- Forgot Password -->
